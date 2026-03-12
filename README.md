@@ -1,7 +1,7 @@
 # WinToolerV1 — Windows 11/10 System Utility
 
 <p align="center">
-  <img src="banner.png" width="515" alt="WinTooler Icon"/>
+  <img src="new_banner.png" width="515" alt="WinTooler Icon"/>
 </p>
 
 <p align="center">
