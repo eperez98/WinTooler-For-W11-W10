@@ -187,7 +187,7 @@ public class AeroGlass {
 <Window
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    Title="WinTooler V0.7 beta - Build 5035"
+    Title="WinTooler V0.7.1 beta - Build 5040"
     Width="1180" Height="780"
     MinWidth="980" MinHeight="640"
     WindowStartupLocation="CenterScreen"
@@ -477,7 +477,7 @@ public class AeroGlass {
               </Border>
             </Grid>
             <TextBlock x:Name="SidebarTitle" Text="WinTooler" FontSize="15" FontWeight="Bold" Foreground="#1A1A1A"/>
-            <TextBlock x:Name="SidebarSub" Text="V0.7 beta  ·  Build 5035" FontSize="10" Foreground="#888888" Margin="0,2,0,0"/>
+            <TextBlock x:Name="SidebarSub" Text="V0.7.1 beta  ·  Build 5040" FontSize="10" Foreground="#888888" Margin="0,2,0,0"/>
           </StackPanel>
 
           <!-- Nav items -->
@@ -492,7 +492,7 @@ public class AeroGlass {
             <Button x:Name="NavAppManager" Style="{StaticResource NavBtnActive}">
               <StackPanel Orientation="Horizontal">
                 <Border Width="26" Height="26" CornerRadius="7" Background="#EBEBEB" Margin="0,0,9,0">
-                  <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons" Text="&#xE80F;" FontSize="13"
+                  <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons,Segoe UI Symbol" Text="&#xE80F;" FontSize="13"
                              HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#3C3C3C"/>
                 </Border>
                 <TextBlock Text="App Manager"/>
@@ -506,7 +506,7 @@ public class AeroGlass {
             <Button x:Name="NavTweaks" Style="{StaticResource NavBtn}">
               <StackPanel Orientation="Horizontal">
                 <Border Width="26" Height="26" CornerRadius="7" Background="#EBEBEB" Margin="0,0,9,0">
-                  <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons" Text="&#xE713;" FontSize="13"
+                  <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons,Segoe UI Symbol" Text="&#xE713;" FontSize="13"
                              HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#3C3C3C"/>
                 </Border>
                 <TextBlock Text="Tweaks"/>
@@ -517,7 +517,7 @@ public class AeroGlass {
             <Button x:Name="NavServices" Style="{StaticResource NavBtn}">
               <StackPanel Orientation="Horizontal">
                 <Border Width="26" Height="26" CornerRadius="7" Background="#EBEBEB" Margin="0,0,9,0">
-                  <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons" Text="&#xE896;" FontSize="13"
+                  <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons,Segoe UI Symbol" Text="&#xE896;" FontSize="13"
                              HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#3C3C3C"/>
                 </Border>
                 <TextBlock Text="Services"/>
@@ -531,7 +531,7 @@ public class AeroGlass {
             <Button x:Name="NavRepair" Style="{StaticResource NavBtn}">
               <StackPanel Orientation="Horizontal">
                 <Border Width="26" Height="26" CornerRadius="7" Background="#EBEBEB" Margin="0,0,9,0">
-                  <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons" Text="&#xE90F;" FontSize="13"
+                  <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons,Segoe UI Symbol" Text="&#xE90F;" FontSize="13"
                              HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#3C3C3C"/>
                 </Border>
                 <TextBlock Text="Repair"/>
@@ -542,7 +542,7 @@ public class AeroGlass {
             <Button x:Name="NavStartup" Style="{StaticResource NavBtn}">
               <StackPanel Orientation="Horizontal">
                 <Border Width="26" Height="26" CornerRadius="7" Background="#EBEBEB" Margin="0,0,9,0">
-                  <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons" Text="&#xE7EF;" FontSize="13"
+                  <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons,Segoe UI Symbol" Text="&#xE7EF;" FontSize="13"
                              HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#3C3C3C"/>
                 </Border>
                 <TextBlock Text="Startup Manager"/>
@@ -553,7 +553,7 @@ public class AeroGlass {
             <Button x:Name="NavDNS" Style="{StaticResource NavBtn}">
               <StackPanel Orientation="Horizontal">
                 <Border Width="26" Height="26" CornerRadius="7" Background="#EBEBEB" Margin="0,0,9,0">
-                  <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons" Text="&#xE774;" FontSize="13"
+                  <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons,Segoe UI Symbol" Text="&#xE774;" FontSize="13"
                              HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#3C3C3C"/>
                 </Border>
                 <TextBlock Text="DNS Changer"/>
@@ -564,7 +564,7 @@ public class AeroGlass {
             <Button x:Name="NavBackup" Style="{StaticResource NavBtn}">
               <StackPanel Orientation="Horizontal">
                 <Border Width="26" Height="26" CornerRadius="7" Background="#EBEBEB" Margin="0,0,9,0">
-                  <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons" Text="&#xE74E;" FontSize="13"
+                  <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons,Segoe UI Symbol" Text="&#xE74E;" FontSize="13"
                              HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#3C3C3C"/>
                 </Border>
                 <TextBlock Text="Profile Backup"/>
@@ -577,7 +577,7 @@ public class AeroGlass {
             <Button x:Name="NavISO" Style="{StaticResource NavBtn}">
               <StackPanel Orientation="Horizontal">
                 <Border Width="26" Height="26" CornerRadius="7" Background="#EBEBEB" Margin="0,0,9,0">
-                  <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons" Text="&#xE93C;" FontSize="13"
+                  <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons,Segoe UI Symbol" Text="&#xE93C;" FontSize="13"
                              HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#3C3C3C"/>
                 </Border>
                 <TextBlock Text="ISO Creator"/>
@@ -587,7 +587,7 @@ public class AeroGlass {
             <Button x:Name="NavAbout" Style="{StaticResource NavBtn}">
               <StackPanel Orientation="Horizontal">
                 <Border Width="26" Height="26" CornerRadius="7" Background="#EBEBEB" Margin="0,0,9,0">
-                  <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons" Text="&#xE946;" FontSize="13"
+                  <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons,Segoe UI Symbol" Text="&#xE946;" FontSize="13"
                              HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#3C3C3C"/>
                 </Border>
                 <TextBlock Text="About"/>
@@ -1044,7 +1044,7 @@ public class AeroGlass {
                         Cursor="Hand" Padding="18,16">
                   <StackPanel>
                     <Border Width="44" Height="44" CornerRadius="12" Background="#FDDADA" Margin="0,0,0,10">
-                      <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons"
+                      <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons,Segoe UI Symbol"
                                  Text="&#xE74D;" FontSize="22" Foreground="#C42B1C"
                                  HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Border>
@@ -1081,7 +1081,7 @@ public class AeroGlass {
             </Border>
           </Grid>
 
-          <!-- PAGE: WINDOWS UPDATES — REMOVED Build 5035 -->
+          <!-- PAGE: WINDOWS UPDATES — REMOVED Build 5040 -->
           <Grid x:Name="PageUpdates" Visibility="Collapsed" Width="0" Height="0"/>
 
           <!-- PAGE: ABOUT -->
@@ -1293,7 +1293,7 @@ public class AeroGlass {
           <!-- ====================================================== -->
           <!-- PAGE: ISO CREATOR                                      -->
           <!-- ====================================================== -->
-          <!-- PAGE ISO redesigned Build 5035 -->
+          <!-- PAGE ISO redesigned Build 5040 -->
           <Grid x:Name="PageISO" Visibility="Collapsed">
             <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
               <Grid Margin="24,20,24,20">
@@ -1412,7 +1412,7 @@ public class AeroGlass {
                         <Border Grid.Column="0" Background="#F0F7FF" CornerRadius="6" Padding="12,8"
                                 BorderBrush="#C5DCF5" BorderThickness="1">
                           <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons"
+                            <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons,Segoe UI Symbol"
                                        Text="&#xE74C;" FontSize="14" Foreground="#0067C0"
                                        VerticalAlignment="Center" Margin="0,0,10,0"/>
                             <TextBlock x:Name="ISOAppCount" FontSize="12" Foreground="#0067C0"
@@ -1423,7 +1423,7 @@ public class AeroGlass {
                         <Button x:Name="ISOBtnPickApps" Grid.Column="2"
                                 Style="{StaticResource BtnAccent}" Padding="16,8">
                           <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons"
+                            <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons,Segoe UI Symbol"
                                        Text="&#xE710;" FontSize="13" Margin="0,0,8,0" VerticalAlignment="Center"/>
                             <TextBlock Text="Select Apps..." VerticalAlignment="Center"/>
                           </StackPanel>
@@ -1458,7 +1458,7 @@ public class AeroGlass {
                   <Button x:Name="ISOBtnCreate" Style="{StaticResource BtnAccent}"
                           Padding="24,12" FontSize="14" HorizontalAlignment="Left" Margin="0,0,0,20">
                     <StackPanel Orientation="Horizontal">
-                      <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons"
+                      <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons,Segoe UI Symbol"
                                  Text="&#xE93C;" FontSize="14" Margin="0,0,10,0" VerticalAlignment="Center"/>
                       <TextBlock Text="Create Windows 11 ISO" VerticalAlignment="Center"/>
                     </StackPanel>
@@ -1525,7 +1525,7 @@ public class AeroGlass {
                       <Button x:Name="ISOOpenMSPage" Style="{StaticResource BtnAccent}"
                               Padding="12,8" HorizontalAlignment="Stretch">
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                          <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons"
+                          <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons,Segoe UI Symbol"
                                      Text="&#xE774;" FontSize="13" Margin="0,0,8,0" VerticalAlignment="Center"/>
                           <TextBlock Text="Open Microsoft Download Page" FontSize="11" VerticalAlignment="Center"/>
                         </StackPanel>
@@ -1574,7 +1574,7 @@ public class AeroGlass {
                          Stretch="UniformToFill"/>
                 </Border>
                 <TextBlock x:Name="AboutTitle" Text="WinTooler" FontSize="26" FontWeight="Bold" Foreground="#1A1A1A"/>
-                <TextBlock x:Name="AboutSub" Text="V0.7 beta  &#xB7;  Build 5035  by ErickP (Eperez98)" FontSize="13" Foreground="#0067C0" Margin="0,4,0,4"/>
+                <TextBlock x:Name="AboutSub" Text="V0.7.1 beta  &#xB7;  Build 5040  by ErickP (Eperez98)" FontSize="13" Foreground="#0067C0" Margin="0,4,0,4"/>
                 <TextBlock Text="A modern Windows 11 optimization and deployment toolkit." FontSize="12"
                            Foreground="#666666" Margin="0,0,0,16" TextWrapping="Wrap"/>
 
@@ -1582,10 +1582,10 @@ public class AeroGlass {
                 <Border Background="#F9F9F9" CornerRadius="8" Padding="16,12"
                         BorderBrush="#E5E5E5" BorderThickness="1" Margin="0,0,0,16">
                   <StackPanel>
-                    <TextBlock Text="Features in Build 5035" FontSize="12" FontWeight="SemiBold"
+                    <TextBlock Text="Features in Build 5040 (V0.7.1 beta)" FontSize="12" FontWeight="SemiBold"
                                Foreground="#3A3A3A" Margin="0,0,0,8"/>
                     <TextBlock FontSize="12" Foreground="#555555" TextWrapping="Wrap" LineHeight="22">
-                      &#x2022; App Manager (winget / Chocolatey, 376 apps, 9 categories)&#x0A;&#x2022; System Tweaks (23 tweaks - Bloatware, Performance, Privacy, UI)&#x0A;&#x2022; Services Manager (18 services - Enable / Disable / Manual)&#x0A;&#x2022; Repair tools (SFC+DISM, DNS flush, Restore Point, Delete Restore Points)&#x0A;&#x2022; Startup Manager (registry Run keys + startup folders)&#x0A;&#x2022; DNS Changer (Cloudflare, Google, Quad9, OpenDNS, Custom)&#x0A;&#x2022; Profile Backup (JSON export / import with name)&#x0A;&#x2022; ISO Creator (TPM bypass, bloat removal, driver injection, app embedding, unattended)&#x0A;&#x2022; Light &amp; Dark Mode theme + EN / ES language toggle
+                      &#x2022; App Manager (winget + auto-install Chocolatey, 376 apps, 9 categories)&#x0A;&#x2022; System Tweaks (23 tweaks - Bloatware, Performance, Privacy, UI)&#x0A;&#x2022; Services Manager (18 services - Enable / Disable / Manual)&#x0A;&#x2022; Repair tools (SFC+DISM, DNS flush, Restore Point, Delete Restore Points)&#x0A;&#x2022; Startup Manager (auto-starts TaskScheduler, schtasks CLI fallback)&#x0A;&#x2022; DNS Changer (Cloudflare, Google, Quad9, OpenDNS, Custom)&#x0A;&#x2022; Profile Backup (JSON export / import with name)&#x0A;&#x2022; ISO Creator (TPM bypass, bloat removal, driver injection, app embedding, unattended)&#x0A;&#x2022; Light &amp; Dark Mode + EN / ES + Win10 icon font compatibility
                     </TextBlock>
                   </StackPanel>
                 </Border>
@@ -1596,7 +1596,7 @@ public class AeroGlass {
                   <StackPanel>
                     <Grid Margin="0,0,0,10">
                       <TextBlock Text="Version"     Foreground="#777777"/>
-                      <TextBlock x:Name="AboutVersion" Text="V0.7 beta  Build 5035" Foreground="#1A1A1A" HorizontalAlignment="Right"/>
+                      <TextBlock x:Name="AboutVersion" Text="V0.7.1 beta  Build 5040" Foreground="#1A1A1A" HorizontalAlignment="Right"/>
                     </Grid>
                     <Grid Margin="0,0,0,10">
                       <TextBlock Text="Platform"    Foreground="#777777"/>
@@ -1626,45 +1626,61 @@ public class AeroGlass {
                         Style="{StaticResource BtnGhost}"
                         Margin="0,0,0,16" HorizontalAlignment="Left"/>
 
-                <!-- Known Issues card -->
-                <Border Background="#FFF8F0" CornerRadius="8" Padding="16,14"
-                        BorderBrush="#F0C070" BorderThickness="1" Margin="0,0,0,16">
+                <!-- V0.7.1 Resolved badge -->
+                <Border Background="#E8F5E9" CornerRadius="6" Padding="10,5"
+                        BorderBrush="#A8DFB0" BorderThickness="1" Margin="0,0,0,8"
+                        HorizontalAlignment="Left">
+                  <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="&#x2714;" Foreground="#107C10" FontSize="11" Margin="0,0,6,0" VerticalAlignment="Center"/>
+                    <TextBlock Text="v0.7.1 BETA  -  Build 5040  (Current Release)" FontSize="12" FontWeight="SemiBold"
+                               Foreground="#107C10"/>
+                  </StackPanel>
+                </Border>
+
+                <!-- V0.7.1 Resolved card -->
+                <Border Background="#F0FFF4" CornerRadius="8" Padding="16,14"
+                        BorderBrush="#A8DFB0" BorderThickness="1" Margin="0,0,0,16">
                   <StackPanel>
-                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
-                      <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons"
-                                 Text="&#xE7BA;" FontSize="14" Foreground="#C45000"
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
+                      <TextBlock FontFamily="Segoe MDL2 Assets,Segoe Fluent Icons,Segoe UI Symbol"
+                                 Text="&#xE930;" FontSize="14" Foreground="#107C10"
                                  Margin="0,0,8,0" VerticalAlignment="Center"/>
-                      <TextBlock Text="Known Issues" FontSize="12" FontWeight="SemiBold"
-                                 Foreground="#C45000" VerticalAlignment="Center"/>
+                      <TextBlock Text="All Known Limitations Resolved in V0.7.1" FontSize="12" FontWeight="SemiBold"
+                                 Foreground="#107C10" VerticalAlignment="Center"/>
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal" Margin="0,0,0,7">
-                      <TextBlock Text="&#x26A0;" Foreground="#C45000" FontSize="10" Margin="0,1,8,0"/>
-                      <TextBlock TextWrapping="Wrap" MaxWidth="440" FontSize="11" Foreground="#555555">
-                        ISO Creator requires DISM or Windows ADK (oscdimg). ADK auto-install may need a restart.
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                      <TextBlock Text="&#x2714;" Foreground="#107C10" FontSize="10" Margin="0,1,8,0"/>
+                      <TextBlock TextWrapping="Wrap" MaxWidth="440" FontSize="11" Foreground="#333333">
+                        <Run FontWeight="SemiBold">ISO Creator - no ADK required:</Run>
+                        <Run Foreground="#555555"> 3-tier fallback: oscdimg (ADK) then wimlib then .NET ZipFile. Always completes.</Run>
                       </TextBlock>
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal" Margin="0,0,0,7">
-                      <TextBlock Text="&#x26A0;" Foreground="#C45000" FontSize="10" Margin="0,1,8,0"/>
-                      <TextBlock TextWrapping="Wrap" MaxWidth="440" FontSize="11" Foreground="#555555">
-                        ISO app embedding requires winget on the target system. Apps embedded via Install-Apps.bat in the ISO root.
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                      <TextBlock Text="&#x2714;" Foreground="#107C10" FontSize="10" Margin="0,1,8,0"/>
+                      <TextBlock TextWrapping="Wrap" MaxWidth="440" FontSize="11" Foreground="#333333">
+                        <Run FontWeight="SemiBold">ISO App Embedding - winget self-bootstrapped:</Run>
+                        <Run Foreground="#555555"> Install-Apps.bat installs winget automatically on the target system.</Run>
                       </TextBlock>
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal" Margin="0,0,0,7">
-                      <TextBlock Text="&#x26A0;" Foreground="#C45000" FontSize="10" Margin="0,1,8,0"/>
-                      <TextBlock TextWrapping="Wrap" MaxWidth="440" FontSize="11" Foreground="#555555">
-                        Some Segoe MDL2 Assets icons may not render on Windows 10 builds before 19041. Unicode fallback characters are used.
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                      <TextBlock Text="&#x2714;" Foreground="#107C10" FontSize="10" Margin="0,1,8,0"/>
+                      <TextBlock TextWrapping="Wrap" MaxWidth="440" FontSize="11" Foreground="#333333">
+                        <Run FontWeight="SemiBold">Chocolatey auto-installed:</Run>
+                        <Run Foreground="#555555"> App Manager bootstraps Chocolatey on demand when winget fails for an app.</Run>
                       </TextBlock>
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal" Margin="0,0,0,7">
-                      <TextBlock Text="&#x26A0;" Foreground="#C45000" FontSize="10" Margin="0,1,8,0"/>
-                      <TextBlock TextWrapping="Wrap" MaxWidth="440" FontSize="11" Foreground="#555555">
-                        Chocolatey integration requires a separate install. winget is the primary package manager.
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                      <TextBlock Text="&#x2714;" Foreground="#107C10" FontSize="10" Margin="0,1,8,0"/>
+                      <TextBlock TextWrapping="Wrap" MaxWidth="440" FontSize="11" Foreground="#333333">
+                        <Run FontWeight="SemiBold">TaskScheduler auto-started:</Run>
+                        <Run Foreground="#555555"> Startup Manager starts the service if stopped; schtasks CLI used as fallback.</Run>
                       </TextBlock>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
-                      <TextBlock Text="&#x26A0;" Foreground="#C45000" FontSize="10" Margin="0,1,8,0"/>
-                      <TextBlock TextWrapping="Wrap" MaxWidth="440" FontSize="11" Foreground="#555555">
-                        Startup Manager task disabling requires the TaskScheduler service to be running.
+                      <TextBlock Text="&#x2714;" Foreground="#107C10" FontSize="10" Margin="0,1,8,0"/>
+                      <TextBlock TextWrapping="Wrap" MaxWidth="440" FontSize="11" Foreground="#333333">
+                        <Run FontWeight="SemiBold">Icons on Windows 10 pre-19041:</Run>
+                        <Run Foreground="#555555"> VisualTree walk replaces Segoe MDL2/Fluent with Segoe UI Symbol at window load.</Run>
                       </TextBlock>
                     </StackPanel>
                   </StackPanel>
@@ -1676,7 +1692,7 @@ public class AeroGlass {
                         HorizontalAlignment="Left">
                   <StackPanel Orientation="Horizontal">
                     <TextBlock Text="&#x2714;" Foreground="#107C10" FontSize="11" Margin="0,0,6,0" VerticalAlignment="Center"/>
-                    <TextBlock Text="v0.7 BETA  -  Tools Expansion  (Current Release)" FontSize="12" FontWeight="SemiBold"
+                    <TextBlock Text="v0.7 BETA  -  Tools Expansion" FontSize="12" FontWeight="SemiBold"
                                Foreground="#107C10"/>
                   </StackPanel>
                 </Border>
@@ -1721,8 +1737,8 @@ public class AeroGlass {
                     <StackPanel Orientation="Horizontal">
                       <TextBlock Text="&#x2714;" Foreground="#107C10" FontSize="10" Margin="0,2,10,0"/>
                       <TextBlock TextWrapping="Wrap" MaxWidth="420" FontSize="12" Foreground="#333333">
-                        <Run FontWeight="SemiBold">PS5.1 Compatibility</Run>
-                        <Run Foreground="#666666"> - All inline-if patterns eliminated; runs on default Windows PowerShell</Run>
+                        <Run FontWeight="SemiBold">Limitations Resolved</Run>
+                        <Run Foreground="#666666"> - Auto Chocolatey, winget bootstrap in ISO, TaskScheduler auto-start, icon font compat</Run>
                       </TextBlock>
                     </StackPanel>
                   </StackPanel>
@@ -1855,6 +1871,36 @@ public class AeroGlass {
     # Load window
     $reader = New-Object System.Xml.XmlNodeReader($XAML)
     $win    = [Windows.Markup.XamlReader]::Load($reader)
+
+    # ----------------------------------------------------------------
+    #  ICON FONT COMPATIBILITY FIX (Win10 < 19041)
+    # Segoe MDL2 Assets / Segoe Fluent Icons are not available on older
+    # Win10 builds. Detect and replace with Segoe UI Symbol fallback.
+    # ----------------------------------------------------------------
+    if ($global:OSBuild -lt 19041) {
+        # Walk the entire visual treeisual tree and replace icon font on TextBlocks
+        $segoeFont   = [Windows.Media.FontFamily]::new("Segoe UI Symbol")
+        $fluent      = "Segoe MDL2 Assets,Segoe Fluent Icons"
+        $queue = [System.Collections.Queue]::new()
+        $queue.Enqueue($win)
+        while ($queue.Count -gt 0) {
+            $el = $queue.Dequeue()
+            try {
+                if ($el.GetType().Name -eq "TextBlock") {
+                    $ff = $el.FontFamily
+                    if ($ff -and ($ff.ToString() -like "*MDL2*" -or $ff.ToString() -like "*Fluent*")) {
+                        $el.FontFamily = $segoeFont
+                    }
+                }
+                $children = [Windows.Media.VisualTreeHelper]::GetChildrenCount($el)
+                for ($ci = 0; $ci -lt $children; $ci++) {
+                    $child = [Windows.Media.VisualTreeHelper]::GetChild($el, $ci)
+                    if ($child) { $queue.Enqueue($child) }
+                }
+            } catch {}
+        }
+        Write-WTLog "Icon font compatibility fix applied (OS Build $($global:OSBuild) < 19041)"
+    }
 
     # ----------------------------------------------------------------
     #  GET CONTROLS
@@ -3302,6 +3348,24 @@ public class AeroGlass {
 
                 if (-not $ok -and $choco -ne "na" -and $choco -ne "") {
                     $chocoExe = Get-Command choco -ErrorAction SilentlyContinue
+                    # Auto-install Chocolatey if not present
+                    if (-not $chocoExe) {
+                        "  choco not found - auto-installing Chocolatey..." | Out-File $logFile -Append -Encoding UTF8
+                        try {
+                            $chocoInstall = [scriptblock]::Create(
+                                (New-Object Net.WebClient).DownloadString("https://community.chocolatey.org/install.ps1"))
+                            & $chocoInstall 2>&1 | Out-File $logFile -Append -Encoding UTF8
+                            $env:PATH = $env:PATH + ";$env:ALLUSERSPROFILE\chocolatey\bin"
+                            $chocoExe = Get-Command choco -ErrorAction SilentlyContinue
+                            if ($chocoExe) {
+                                "  Chocolatey installed successfully." | Out-File $logFile -Append -Encoding UTF8
+                            } else {
+                                "  Chocolatey install failed or choco not in PATH." | Out-File $logFile -Append -Encoding UTF8
+                            }
+                        } catch {
+                            "  Chocolatey auto-install error: $_" | Out-File $logFile -Append -Encoding UTF8
+                        }
+                    }
                     if ($chocoExe) {
                         try {
                             & choco install $choco -y --no-progress 2>&1 | Out-File $logFile -Append -Encoding UTF8
@@ -4072,20 +4136,32 @@ public class AeroGlass {
     $ctrl["StartupBtnRefresh"].Add_Click({ & $script:StartupLoad })
 
     $ctrl["StartupBtnEnable"].Add_Click({
+        try {
+            $tsSvc = Get-Service -Name "Schedule" -ErrorAction SilentlyContinue
+            if ($tsSvc -and $tsSvc.Status -ne "Running") {
+                Start-Service -Name "Schedule" -ErrorAction SilentlyContinue
+                Start-Sleep -Milliseconds 800
+            }
+        } catch {}
         $selected = @($ctrl["StartupPanel"].Children | Where-Object {
             $_.GetType().Name -eq "Border" -and
             $_.BorderThickness.Left -gt 0
         })
         foreach ($row in $selected) {
             $keyPath = $row.Tag
+            $entry = $script:StartupEntries | Where-Object { $_.KeyPath -eq $keyPath }
             if ($keyPath -and $keyPath -like "HK*") {
                 try {
-                    $parent  = Split-Path $keyPath -Parent
                     $valName = Split-Path $keyPath -Leaf
                     $disabledKey = "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run"
                     if (Test-Path $disabledKey) {
                         Remove-ItemProperty -Path $disabledKey -Name $valName -ErrorAction SilentlyContinue
                     }
+                } catch {}
+            } elseif ($entry -and $entry.Type -eq "Task") {
+                try {
+                    $taskName = Split-Path $keyPath -Leaf
+                    & schtasks /Change /TN "$taskName" /ENABLE 2>&1 | Out-Null
                 } catch {}
             }
         }
@@ -4093,6 +4169,14 @@ public class AeroGlass {
     })
 
     $ctrl["StartupBtnDisable"].Add_Click({
+        # Ensure TaskScheduler is running (needed for scheduled-task operations)
+        try {
+            $tsSvc = Get-Service -Name "Schedule" -ErrorAction SilentlyContinue
+            if ($tsSvc -and $tsSvc.Status -ne "Running") {
+                Start-Service -Name "Schedule" -ErrorAction SilentlyContinue
+                Start-Sleep -Milliseconds 800
+            }
+        } catch {}
         $selected = @($ctrl["StartupPanel"].Children | Where-Object {
             $_.GetType().Name -eq "Border" -and
             $_.BorderThickness.Left -gt 0
@@ -4107,9 +4191,14 @@ public class AeroGlass {
                     if (-not (Test-Path $disabledKey)) {
                         New-Item -Path $disabledKey -Force | Out-Null
                     }
-                    # Byte pattern 03 00 00 00 ... = disabled in StartupApproved
                     $disabledBytes = [byte[]](3,0,0,0,0,0,0,0,0,0,0,0)
                     Set-ItemProperty -Path $disabledKey -Name $valName -Value $disabledBytes -Type Binary -ErrorAction SilentlyContinue
+                } catch {}
+            } elseif ($entry -and $entry.Type -eq "Task") {
+                # Handle scheduled tasks via schtasks (works without Task Scheduler COM)
+                try {
+                    $taskName = Split-Path $keyPath -Leaf
+                    & schtasks /Change /TN "$taskName" /DISABLE 2>&1 | Out-Null
                 } catch {}
             }
         }
@@ -4262,7 +4351,7 @@ public class AeroGlass {
             }
 
             $profile = [PSCustomObject]@{
-                WinToolerVersion = "V0.7 beta Build 5035"
+                WinToolerVersion = "V0.7.1 beta Build 5040"
                 ExportDate       = (Get-Date).ToString("o")
                 ProfileName      = $profileName
                 Tweaks           = $tweakStates

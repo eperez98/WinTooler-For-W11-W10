@@ -1,7 +1,7 @@
 #Requires -RunAsAdministrator
 <#
 .SYNOPSIS
-    WinTooler V0.7 beta - Build 5035 - Windows 11 ISO Creator Module
+    WinTooler V0.7.1 beta - Build 5040 - Windows 11 ISO Creator Module
 .DESCRIPTION
     Mounts a supplied Windows 11 ISO, applies selected customisations
     (TPM bypass, bloatware removal, network driver injection), then
@@ -309,14 +309,24 @@ function Invoke-Win11ISOCreator {
             $sb = New-Object System.Text.StringBuilder
             [void]$sb.AppendLine("@echo off")
             [void]$sb.AppendLine("title WinTooler - Installing Apps")
-            [void]$sb.AppendLine("echo WinTooler App Installer")
-            [void]$sb.AppendLine("echo ========================")
+            [void]$sb.AppendLine("echo WinTooler App Installer - Build 5040")
+            [void]$sb.AppendLine("echo =======================================")
             [void]$sb.AppendLine("echo.")
+            [void]$sb.AppendLine(":: Bootstrap winget if not present")
             [void]$sb.AppendLine("where winget >nul 2>&1")
             [void]$sb.AppendLine("if %ERRORLEVEL% neq 0 (")
-            [void]$sb.AppendLine("    echo winget not found. Install App Installer from the Microsoft Store.")
-            [void]$sb.AppendLine("    pause & exit /b 1")
+            [void]$sb.AppendLine("    echo winget not found. Bootstrapping via PowerShell...")
+            [void]$sb.AppendLine("    powershell -NoProfile -ExecutionPolicy Bypass -Command \`"Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.DesktopAppInstaller_8wekyb3d8bbwe -ErrorAction SilentlyContinue; Start-Sleep 3\`"")
+            [void]$sb.AppendLine("    where winget >nul 2>&1")
+            [void]$sb.AppendLine("    if %ERRORLEVEL% neq 0 (")
+            [void]$sb.AppendLine("        echo Winget still not available. Downloading App Installer...")
+            [void]$sb.AppendLine("        powershell -NoProfile -ExecutionPolicy Bypass -Command \`"Invoke-WebRequest -Uri https://aka.ms/getwinget -OutFile $env:TEMP\winget.msixbundle; Add-AppxPackage $env:TEMP\winget.msixbundle\`"")
+            [void]$sb.AppendLine("        timeout /t 5 /nobreak >nul")
+            [void]$sb.AppendLine("    )")
             [void]$sb.AppendLine(")")
+            [void]$sb.AppendLine("echo.")
+            [void]$sb.AppendLine(":: Accept winget source agreements silently")
+            [void]$sb.AppendLine("winget list --accept-source-agreements >nul 2>&1")
             [void]$sb.AppendLine("echo.")
             foreach ($id in $ids) {
                 [void]$sb.AppendLine("echo Installing $id...")

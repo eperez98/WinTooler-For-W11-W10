@@ -16,8 +16,8 @@ else                                               { $global:Root = $PWD.Path }
 
 # GLOBALS
 $global:AppName    = "WinTooler"
-$global:AppVersion = "V0.7 beta"
-$global:AppBuild   = "5035"
+$global:AppVersion = "V0.7.1 beta"
+$global:AppBuild   = "5040"
 $global:AppAuthor  = "ErickP (Eperez98)"
 $global:AppGitHub  = "https://github.com/eperez98"
 $global:BuildDate  = (Get-Date -Format "yyyy-MM-dd")

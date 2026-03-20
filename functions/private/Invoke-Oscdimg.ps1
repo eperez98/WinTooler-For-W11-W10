@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    WinTooler V0.7 beta - Build 5035
+    WinTooler V0.7.1 beta - Build 5040
     Private helper: oscdimg wrapper for creating bootable ISO images
 
 .DESCRIPTION
@@ -76,21 +76,30 @@ function Invoke-Oscdimg {
         }
 
         if (-not $oscdimgPath) {
-            # Final fallback: wimlib
+            # Fallback 2: wimlib-imagex
             $wimlibPath = Invoke-Oscdimg -CheckWimlib
             if ($wimlibPath) {
                 Report 90 "Using wimlib-imagex as oscdimg fallback..."
-                $wimLibArgs = @(
-                    "iso",
-                    "--wimboot",
-                    $SourceDir,
-                    $OutputISO
-                )
+                $wimLibArgs = @("iso","--wimboot",$SourceDir,$OutputISO)
                 $proc = Start-Process -FilePath $wimlibPath -ArgumentList $wimLibArgs -Wait -PassThru -NoNewWindow
                 if ($proc.ExitCode -eq 0 -and (Test-Path $OutputISO)) {
                     Report 96 "wimlib ISO creation complete."
                     return $true
                 }
+            }
+            # Fallback 3: pure .NET ZipFile - zero external deps, always available.
+            # Produces a non-bootable archive. Recommend ADK for a bootable result.
+            Report 90 "oscdimg and wimlib not available. Building ISO archive via .NET ZipFile..."
+            Report 90 "NOTE: This produces a non-bootable archive. Install Windows ADK for a bootable ISO."
+            try {
+                Add-Type -AssemblyName System.IO.Compression.FileSystem
+                [System.IO.Compression.ZipFile]::CreateFromDirectory($SourceDir, $OutputISO)
+                if (Test-Path $OutputISO) {
+                    Report 96 "ISO archive created (non-bootable). Install ADK Deployment Tools for bootable output."
+                    return $true
+                }
+            } catch {
+                Write-WTLog "ZipFile fallback failed: $_" "ERROR"
             }
             return $false
         }

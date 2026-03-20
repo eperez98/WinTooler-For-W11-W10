@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    WinTooler V0.7 beta - Build 5035
+    WinTooler V0.7.1 beta - Build 5040
     Private helper: Download Windows 11 ESD from Microsoft using Fido-style API
 
 .DESCRIPTION

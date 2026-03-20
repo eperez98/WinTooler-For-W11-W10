@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    WinTooler V0.7 beta - Build 5035
+    WinTooler V0.7.1 beta - Build 5040
     Private helper: Convert Windows ESD to bootable ISO
 
 .DESCRIPTION
